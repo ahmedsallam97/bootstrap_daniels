@@ -3,397 +3,888 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Professional Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Daniels</title>
+    <!-- favicon -->
+    <link href="img/favicon.ico" rel="icon" type="image/png" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- google fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/c699e40d46.js"
-      crossorigin="anonymous"></script>
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="layer">
-        <div class="navbar">
-          <div class="container">
-            <a href="" class="logo">Fokir</a>
-            <div class="nav-list">
-              <ul>
-                <li><a href="" class="nav-home">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Testimonial</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-              </ul>
-            </div>
+    <div id="header" class="fixed-top">
+      <nav
+        id="main-nav"
+        class="navbar navbar-expand-lg navbar-sticky p-4 fixed-top"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <a class="navbar-brand mx-5" href="#">Daniels</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  data-scroll-nav="0"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#clients">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="container header-container">
-          <div class="header.text">
-            <h3 class="text1">Hello i'm</h3>
-            <h1 class="text2">Ahmed Sallam</h1>
-            <h4 class="text3">Professional Web Designer</h4>
-          </div>
-        </div>
+      </nav>
+    </div>
+    <!-- Hero Section -->
+    <div
+      id="hero"
+      class="hero-section d-flex justify-content-center align-items-center"
+      data-scroll-index="0"
+    >
+      <div class="hero-content text-white text-center">
+        <h5>Hello</h5>
+        <h1>I Am <span class="typing"></span></h1>
+        <!-- social icons -->
+        <span class="social-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-behance"></i
+          ><i class="fa-brands fa-youtube"></i>
+        </span>
       </div>
     </div>
-    <div class="section about-section">
-      <div class="container about-container">
-        <div class="image-box">
-          <div class="about-image">
-            <img src="img/work-7.jpg" alt="" />
-            <div class="social-overlay">
-              <div class="social-icon">
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+    <div id="about" class="about section-padding pb-70">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="about-img">
+              <img src="img/about.jpg" alt="avatar" />
+            </div>
+          </div>
+          <div class="col-md-7 about-media-query">
+            <div class="section-heading"><h3>About Me.</h3></div>
+            <div class="about-heading-p">
+              <p>UI / UX Designer & Web Developer</p>
+            </div>
+            <p>
+              I am <b>Ahmed Sallam</b> Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever It has survived not only five
+              centuries, but also the leap into electronic but also the leap
+              into electronic typesetting, remaining essentially unchanged. It
+              was popularised in the 1960s with the release of Letraset sheets
+              containing
+            </p>
+            <div class="skills">
+              <div class="item">
+                <div class="skills-progress">
+                  <h6>Web Design</h6>
+                  <span data-value="95%" style="width: 95%"></span>
+                </div>
               </div>
-              <div class="social-icon">
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <div class="item">
+                <div class="skills-progress">
+                  <h6>Branding</h6>
+                  <span data-value="80%" style="width: 80%"></span>
+                </div>
               </div>
-              <div class="social-icon">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <div class="item">
+                <div class="skills-progress">
+                  <h6>Development</h6>
+                  <span data-value="90%" style="width: 90%"></span>
+                </div>
               </div>
-              <div class="social-icon">
-                <a href=""><i class="fa-brands fa-github"></i></a>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="about-text">
-          <h2 class="text4"><span class="I">I&nbsp;</span>Hello,</h2>
-          <p class="text5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <div class="about-list">
-            <div class="about-list1">
-              <ul>
-                <li><span class="bold">Name: </span>Abdelhamid Hafez</li>
-                <li><span class="bold">Age: </span>28 Years</li>
-                <li><span class="bold">Freelance: </span>Avaliable</li>
-              </ul>
-            </div>
-            <div class="about-list2">
-              <ul>
-                <li><span class="bold">Job Title: </span>UI/UX Designer</li>
-                <li><span class="bold">Location: </span>Egypt, Tanta</li>
-                <li><span class="bold">E-Mail: </span>zaza@gmail.com</li>
-              </ul>
-            </div>
-          </div>
-          <div class="about-buttons d-flex">
-            <div class="about-button1">
-              <a href="">Download CV<i class="fa-solid fa-download"></i></a>
-            </div>
-            <div class="about-button2">
-              <a href="">Hire Me <i class="fa-solid fa-paper-plane"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section service-section bg-grey">
-      <div class="container service-container">
-        <div class="section-title">
-          <h2 class="service-title">Our Services</h2>
-        </div>
-        <div class="service-box">
-          <div class="service">
-            <div class="service-text">
-              <i class="fa-solid fa-pen-ruler"></i>
-              <h3>UI/UX DESIGN</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ratione adipisci mollitia quis necstatibus.
-              </p>
-            </div>
-          </div>
-          <div class="service">
-            <div class="service-text">
-              <i class="fa-sharp fa-solid fa-code"></i>
-              <h3>APP DEVELOPMENT</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ratione adipisci mollitia quis necstatibus.
-              </p>
-            </div>
-          </div>
-          <div class="service">
-            <div class="service-text">
-              <i class="fa-sharp fa-solid fa-chart-line"></i>
-              <h3>PRODUCT DESIGN</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ratione adipisci mollitia quis necstatibus.
-              </p>
-            </div>
-          </div>
-          <div class="service">
-            <div class="service-text">
-              <i class="fa fa-gears"></i>
-              <h3>UI/UX DESIGN</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ratione adipisci mollitia quis necstatibus.
-              </p>
+            <div class="about-buttons">
+              <button type="button" class="btn btn-about btn-dark">
+                Download CV
+              </button>
+              <button type="button" class="btn btn-about btn-outline-dark">
+                Contact Me
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="section portfolio-section">
-      <div class="container portfolio-container">
-        <div class="section-title">
-          <h2 class="portfolio-title">Our Portfolio</h2>
-        </div>
-        <div class="portfolio-buttons">
-          <button class="active"><a href="">ALL</a></button>
-          <button class=""><a href="">Graphic</a></button>
-          <button class=""><a href="">Web Design</a></button>
-          <button class=""><a href="">Branding</a></button>
-        </div>
-        <div class="portfolio-box">
-          <div class="portfolio-item">
-            <div class="image image-overlay-hover">
-              <a href=""
-                ><img src="img/1.jpg" alt="Watch" />
-                <div class="portfolio-hover-icon">
-                  <i class="fa-solid fa-image"></i>
-                </div>
-              </a>
+    <div id="services" class="services section-padding bg-gray pb-70">
+      <div class="container">
+        <div class="section-title text-center"><h3>Services.</h3></div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="item text-center">
+              <span class="icon">
+                <i class="fa-solid fa-laptop" aria-hidden="true"></i>
+              </span>
+              <h6>Web Design</h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+                industry's standard dummy text ever
+              </p>
             </div>
           </div>
-          <div class="portfolio-item">
-            <div class="image image-overlay-hover">
-              <a href=""
-                ><img src="img/2.jpg" alt="Watch" />
-                <div class="portfolio-hover-icon">
-                  <i class="fa-solid fa-image"></i>
-                </div>
-              </a>
+          <div class="col-md-4">
+            <div class="item text-center">
+              <span class="icon">
+                <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+              </span>
+              <h6>Branding</h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+                industry's standard dummy text ever
+              </p>
             </div>
           </div>
-          <div class="portfolio-item">
-            <div class="image image-overlay-hover">
-              <a href=""
-                ><img src="img/3.jpg" alt="Watch" />
-                <div class="portfolio-hover-icon">
-                  <i class="fa-solid fa-image"></i>
-                </div>
-              </a>
+          <div class="col-md-4">
+            <div class="item text-center">
+              <span class="icon">
+                <i class="fa-solid fa-umbrella" aria-hidden="true"></i>
+              </span>
+              <h6>Development</h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+                industry's standard dummy text ever
+              </p>
             </div>
           </div>
-          <div class="portfolio-item">
-            <div class="image image-overlay-hover">
-              <a href=""
-                ><img src="img/4.jpg" alt="Watch" />
-                <div class="portfolio-hover-icon">
-                  <i class="fa-solid fa-image"></i>
-                </div>
-              </a>
+          <div class="col-md-4">
+            <div class="item text-center">
+              <span class="icon">
+                <i class="fa-solid fa-gem" aria-hidden="true"></i>
+              </span>
+              <h6>Creative Design</h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+                industry's standard dummy text ever
+              </p>
             </div>
           </div>
-          <div class="portfolio-item">
-            <div class="image image-overlay-hover">
-              <a href=""
-                ><img src="img/5.jpg" alt="Watch" />
-                <div class="portfolio-hover-icon">
-                  <i class="fa-solid fa-image"></i>
-                </div>
-              </a>
+          <div class="col-md-4">
+            <div class="item text-center">
+              <span class="icon">
+                <i class="fa-solid fa-tv" aria-hidden="true"></i>
+              </span>
+              <h6>Fully Responsive</h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+                industry's standard dummy text ever
+              </p>
             </div>
           </div>
-          <div class="portfolio-item">
-            <div class="image image-overlay-hover">
-              <a href=""
-                ><img src="img/6.jpg" alt="Watch" />
-                <div class="portfolio-hover-icon">
-                  <i class="fa-solid fa-image"></i>
-                </div>
-              </a>
+          <div class="col-md-4">
+            <div class="item text-center">
+              <span class="icon">
+                <i class="fa-solid fa-camera" aria-hidden="true"></i>
+              </span>
+              <h6>Retina Ready</h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+                industry's standard dummy text ever
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="section info-section bg-grey">
-      <div class="container info-container">
-        <div class="info-box">
-          <div class="info">
-            <div class="info-text">
-              <i class="fa fa-users"></i>
-              <h3>200</h3>
-              <p>Team Members</p>
+    <div id="work" class="portfolio section-padding pb-70">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h3>Portfolio</h3>
+          </div>
+
+          <!-- Portfolio Tabs -->
+          <ul
+            class="nav nav-pills justify-content-center mb-4"
+            id="portfolioTabs"
+            role="tablist"
+          >
+            <li class="port-nav-items nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="all-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#all"
+                type="button"
+                role="tab"
+              >
+                All
+              </button>
+            </li>
+            <li class="port-nav-items nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="brand-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#brand"
+                type="button"
+                role="tab"
+              >
+                Brand
+              </button>
+            </li>
+            <li class="port-nav-items nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="web-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#web"
+                type="button"
+                role="tab"
+              >
+                Web Design
+              </button>
+            </li>
+            <li class="port-nav-items nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="graphic-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#graphic"
+                type="button"
+                role="tab"
+              >
+                Graphic
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="portfolioTabsContent">
+            <!-- All Projects -->
+            <div class="tab-pane fade show active" id="all" role="tabpanel">
+              <div class="row">
+                <!-- Web Design -->
+                <div class="col-md-4">
+                  <div class="port-img">
+                    <img src="img/1.jpg" alt="image" />
+                    <div class="port-img-overlay">
+                      <div class="overlay-text text-center">
+                        <h6 class="ov-title">WEB DESIGN</h6>
+                        <div class="icons">
+                          <span class="icon"
+                            ><a href="#0"
+                              ><i class="fa-solid fa-chain-broken"></i></a
+                          ></span>
+                          <span class="icon link"
+                            ><a href="img/1.jpg"
+                              ><i class="fa-solid fa-search-plus"></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Brand -->
+                <div class="col-md-4">
+                  <div class="port-img">
+                    <img src="img/2.jpg" alt="image" />
+                    <div class="port-img-overlay">
+                      <div class="overlay-text text-center">
+                        <h6 class="ov-title">BRAND</h6>
+                        <div class="icons">
+                          <span class="icon"
+                            ><a href="#0"
+                              ><i class="fa-solid fa-chain-broken"></i></a
+                          ></span>
+                          <span class="icon link"
+                            ><a href="img/2.jpg"
+                              ><i class="fa-solid fa-search-plus"></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Graphic -->
+                <div class="col-md-4">
+                  <div class="port-img">
+                    <img src="img/3.jpg" alt="image" />
+                    <div class="port-img-overlay">
+                      <div class="overlay-text text-center">
+                        <h6 class="ov-title">GRAPHIC</h6>
+                        <div class="icons">
+                          <span class="icon"
+                            ><a href="#0"
+                              ><i class="fa-solid fa-chain-broken"></i></a
+                          ></span>
+                          <span class="icon link"
+                            ><a href="img/3.jpg"
+                              ><i class="fa-solid fa-search-plus"></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Additional Images for All -->
+                <div class="col-md-4">
+                  <div class="port-img">
+                    <img src="img/4.jpg" alt="image" />
+                    <div class="port-img-overlay">
+                      <div class="overlay-text text-center">
+                        <h6 class="ov-title">WEB DESIGN</h6>
+                        <div class="icons">
+                          <span class="icon"
+                            ><a href="#0"
+                              ><i class="fa-solid fa-chain-broken"></i></a
+                          ></span>
+                          <span class="icon link"
+                            ><a href="img/4.jpg"
+                              ><i class="fa-solid fa-search-plus"></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="port-img">
+                    <img src="img/5.jpg" alt="image" />
+                    <div class="port-img-overlay">
+                      <div class="overlay-text text-center">
+                        <h6 class="ov-title">BRAND</h6>
+                        <div class="icons">
+                          <span class="icon"
+                            ><a href="#0"
+                              ><i class="fa-solid fa-chain-broken"></i></a
+                          ></span>
+                          <span class="icon link"
+                            ><a href="img/5.jpg"
+                              ><i class="fa-solid fa-search-plus"></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="port-img">
+                    <img src="img/6.jpg" alt="image" />
+                    <div class="port-img-overlay">
+                      <div class="overlay-text text-center">
+                        <h6 class="ov-title">GRAPHIC</h6>
+                        <div class="icons">
+                          <span class="icon"
+                            ><a href="#0"
+                              ><i class="fa-solid fa-chain-broken"></i></a
+                          ></span>
+                          <span class="icon link"
+                            ><a href="img/6.jpg"
+                              ><i class="fa-solid fa-search-plus"></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Brand -->
+            <div class="tab-pane fade" id="brand" role="tabpanel">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="port-img">
+                    <img src="img/2.jpg" alt="image" />
+                    <div class="port-img-overlay">
+                      <div class="overlay-text text-center">
+                        <h6 class="ov-title">BRAND</h6>
+                        <div class="icons">
+                          <span class="icon"
+                            ><a href="#0"
+                              ><i class="fa-solid fa-chain-broken"></i></a
+                          ></span>
+                          <span class="icon link"
+                            ><a href="img/2.jpg"
+                              ><i class="fa-solid fa-search-plus"></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="port-img">
+                    <img src="img/5.jpg" alt="image" />
+                    <div class="port-img-overlay">
+                      <div class="overlay-text text-center">
+                        <h6 class="ov-title">BRAND</h6>
+                        <div class="icons">
+                          <span class="icon"
+                            ><a href="#0"
+                              ><i class="fa-solid fa-chain-broken"></i></a
+                          ></span>
+                          <span class="icon link"
+                            ><a href="img/5.jpg"
+                              ><i class="fa-solid fa-search-plus"></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Web Design -->
+            <div class="tab-pane fade" id="web" role="tabpanel">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="port-img">
+                    <img src="img/1.jpg" alt="image" />
+                    <div class="port-img-overlay">
+                      <div class="overlay-text text-center">
+                        <h6 class="ov-title">WEB DESIGN</h6>
+                        <div class="icons">
+                          <span class="icon"
+                            ><a href="#0"
+                              ><i class="fa-solid fa-chain-broken"></i></a
+                          ></span>
+                          <span class="icon link"
+                            ><a href="img/1.jpg"
+                              ><i class="fa-solid fa-search-plus"></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="port-img">
+                    <img src="img/4.jpg" alt="image" />
+                    <div class="port-img-overlay">
+                      <div class="overlay-text text-center">
+                        <h6 class="ov-title">WEB DESIGN</h6>
+                        <div class="icons">
+                          <span class="icon"
+                            ><a href="#0"
+                              ><i class="fa-solid fa-chain-broken"></i></a
+                          ></span>
+                          <span class="icon link"
+                            ><a href="img/4.jpg"
+                              ><i class="fa-solid fa-search-plus"></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Graphic -->
+            <div class="tab-pane fade" id="graphic" role="tabpanel">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="port-img">
+                    <img src="img/3.jpg" alt="image" />
+                    <div class="port-img-overlay">
+                      <div class="overlay-text text-center">
+                        <h6 class="ov-title">GRAPHIC</h6>
+                        <div class="icons">
+                          <span class="icon"
+                            ><a href="#0"
+                              ><i class="fa-solid fa-chain-broken"></i></a
+                          ></span>
+                          <span class="icon link"
+                            ><a href="img/3.jpg"
+                              ><i class="fa-solid fa-search-plus"></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="port-img">
+                    <img src="img/6.jpg" alt="image" />
+                    <div class="port-img-overlay">
+                      <div class="overlay-text text-center">
+                        <h6 class="ov-title">GRAPHIC</h6>
+                        <div class="icons">
+                          <span class="icon"
+                            ><a href="#0"
+                              ><i class="fa-solid fa-chain-broken"></i></a
+                          ></span>
+                          <span class="icon link"
+                            ><a href="img/6.jpg"
+                              ><i class="fa-solid fa-search-plus"></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="info">
-            <div class="info-text">
-              <i class="fa-sharp fa-solid fa-code"></i>
-              <h3>345</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="clients" class="testm section-padding pb-70 bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="section-title"><h3>Testimonials.</h3></div>
+          <div
+            id="testimonialCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
+          >
+            <div class="carousel-inner">
+              <!-- Testimonial 1 -->
+              <div class="carousel-item active text-center">
+                <img src="img/t.jpg" class="carousel-img" alt="Alex Smith" />
+                <p class="carousel-text">
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book.
+                </p>
+                <h5 class="carousel-name">Alex Smith</h5>
+                <small class="carousel-role">Envato Customer</small>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="carousel-item text-center">
+                <img src="img/t2.jpg" class="carousel-img" alt="John Doe" />
+                <p class="carousel-text">
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book.
+                </p>
+                <h5 class="carousel-name">John Doe</h5>
+                <small class="carousel-role">Envato Customer</small>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="carousel-item text-center">
+                <img src="img/t3.jpg" class="carousel-img" alt="Sarah Lee" />
+                <p class="carousel-text">
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book.
+                </p>
+                <h5 class="carousel-name">Sarah Lee</h5>
+                <small class="carousel-role">Envato Customer</small>
+              </div>
+            </div>
+
+            <!-- Carousel indicators -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="counter section-padding pb-70">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="item">
+              <span class="icon"
+                ><i class="fa-solid fa-users" aria-hidden="true"></i
+              ></span>
+              <h3 class="counter">850</h3>
+              <p>Happy Customers</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="item">
+              <span class="icon"
+                ><i class="fa-solid fa-thumbs-up" aria-hidden="true"></i
+              ></span>
+              <h3 class="counter">230</h3>
               <p>Complete Projects</p>
             </div>
           </div>
-          <div class="info">
-            <div class="info-text">
-              <i class="fa-sharp fa-solid fa-chart-line"></i>
-              <h3>1800</h3>
+          <div class="col-md-3">
+            <div class="item">
+              <span class="icon"
+                ><i class="fa-solid fa-bullhorn" aria-hidden="true"></i
+              ></span>
+              <h3 class="counter">9450</h3>
+              <p>Lines Of Code</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="item">
+              <span class="icon"
+                ><i class="fa-solid fa-cloud-download" aria-hidden="true"></i
+              ></span>
+              <h3 class="counter">780</h3>
               <p>Files Downloaded</p>
             </div>
           </div>
-          <div class="info">
-            <div class="info-text">
-              <i class="fa fa-gears"></i>
-              <h3>1200</h3>
-              <p>Lines of Code</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-    <div class="section testimonial-section">
-      <div class="container testimonial-container">
-        <div class="section-title">
-          <h2 class="testimonial-title">Client Feedback</h2>
-        </div>
-        <div class="testimonial-box bg-grey">
-          <div class="testimonial-img">
-            <img src="/img/feedback.jpg" alt="" />
+    <div id="team" class="team section-padding pb-70 bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h3>Our Team.</h3>
           </div>
-          <div class="testimonial-text">
-            <h3>Alexander</h3>
-            <h4>
-              <a href="#"><i class="fa fa-map-marker"></i> United</a>
-            </h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Exercitationem ducimus ex magni sunt, architecto vel dolore,
-              laudantium dignissimos debitis optio! Exercitationem adipisicing
-              elit.
-            </p>
-            <div class="review-rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section blog-section bg-grey">
-      <div class="container blog-container">
-        <div class="section-title">
-          <h2 class="blog-title">Our blog</h2>
-        </div>
-        <div class="blog-box">
-          <div class="blog">
-            <div class="blog-image"><img src="/img/blog-1.jpg" alt="" /></div>
-            <div class="blog-text">
-              <span class="blog-date">23 November, 2015</span>
-              <h3><a href="#">web design Blog Post</a></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequuntur ea, quis magnam deserunt eius incidunt repellat
-                molestiae.
-              </p>
-              <a class="read-more" href="#"
-                >READ MORE <i class="fa fa-long-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-          <div class="blog">
-            <div class="blog-image">
-              <iframe
-                width="400"
-                height="300"
-                src="https://www.youtube.com/embed/uVju5--RqtY"
-                title="Envato - Bringing Ideas to Life"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen></iframe>
-            </div>
-            <div class="blog-text">
-              <span class="blog-date">20 April, 2018 </span>
-              <h3><a href="#">development Blog Post</a></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequuntur ea, quis magnam deserunt eius incidunt repellat
-                molestiae.
-              </p>
-              <a class="read-more" href="#"
-                >READ MORE <i class="fa fa-long-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-          <div class="blog">
-            <div class="blog-image"><img src="/img/blog-3.jpg" alt="" /></div>
-            <div class="blog-text">
-              <span class="blog-date">17 May, 2017 </span>
-              <h3><a href="#">Full Width Blog Post</a></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequuntur ea, quis magnam deserunt eius incidunt repellat
-                molestiae.
-              </p>
-              <a class="read-more" href="#"
-                >READ MORE <i class="fa fa-long-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section contact-section">
-      <div class="container contact-container">
-        <div class="section-title">
-          <h2 class="contact-title">Contact Us</h2>
-        </div>
-        <div class="contact-box">
-          <form class="contact-form">
-            <div class="form-row d-flex">
-              <div class="form-group d-flex">
-                <input type="text" placeholder="Name" required="" />
+          <div class="col-md-4 col-sm-12 pb-20">
+            <div class="card img-rounded">
+              <div class="card-img">
+                <img src="img/t.jpg" class="card-img-top" alt="..." />
+                <div class="team-img-overlay">
+                  <div class="overlay-text text-center">
+                    <div class="icons">
+                      <span class="icon">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      </span>
+                      <span class="icon">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                      </span>
+                      <span class="icon">
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                      </span>
+                      <span class="icon">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="form-group d-flex">
-                <input type="email" placeholder="Email" required="" />
+              <div class="card-body">
+                <div class="card-text">
+                  <h4>John Doe</h4>
+                  <h5>Front-End Developer</h5>
+                </div>
               </div>
             </div>
-            <div class="form-group d-flex">
-              <input type="text" placeholder="Subject" required="" />
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="card img-rounded">
+              <div class="card-img">
+                <img src="img/t2.jpg" class="card-img-top" alt="..." />
+                <div class="team-img-overlay">
+                  <div class="overlay-text text-center">
+                    <div class="icons">
+                      <span class="icon">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      </span>
+                      <span class="icon">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                      </span>
+                      <span class="icon">
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                      </span>
+                      <span class="icon">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h4>Dave Wood
+</h4>
+                  <h5>Back-End Developer</h5>
+                </div>
+              </div>
             </div>
-            <div class="form-group d-flex">
-              <textarea
-                rows="5"
-                placeholder="Message for me"
-                required=""></textarea>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="card img-rounded">
+              <div class="card-img">
+                <img src="img/t3.jpg" class="card-img-top" alt="..." />
+                <div class="team-img-overlay">
+                  <div class="overlay-text text-center">
+                    <div class="icons">
+                      <span class="icon">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      </span>
+                      <span class="icon">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                      </span>
+                      <span class="icon">
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                      </span>
+                      <span class="icon">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h4>Claire Chedd</h4>
+                  <h5>Front-End Developer</h5>
+                </div>
+              </div>
             </div>
-            <button type="submit" class="send-btn">SEND MESSAGE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="contact section-padding pb-70">
+      <div class="container">
+        <div class="col-md-10 mx-auto">
+          <div class="section-title">
+            <h3>Contact Us.</h3>
+          </div>
+          <div class="row address-text">
+            <div class="col-md-4 col-sm-12">
+              <div class="item text-center">
+                <span class="icon"
+                  ><i class="fa-solid fa-location-dot" aria-hidden="true"></i
+                ></span>
+                <h6 class="counter">Address</h6>
+                <p>6834 Hollywood Blvd - Los Angeles CA</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="item text-center">
+                <span class="icon"
+                  ><i class="fa-solid fa-envelope" aria-hidden="true"></i
+                ></span>
+                <h6 class="counter">Email</h6>
+                <p>Support@website.com</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="item text-center">
+                <span class="icon"
+                  ><i class="fa-solid fa-phone" aria-hidden="true"></i
+                ></span>
+                <h6 class="counter">Phone</h6>
+                <p>+20 010 2517 8918</p>
+              </div>
+            </div>
+          </div>
+          <form
+            class="form"
+            id="contact-form"
+            method="post"
+            action="contact.php"
+            novalidate="true"
+          >
+            <div class="messages"></div>
+
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group has-error has-danger">
+                    <input
+                      id="form_name"
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                      required="required"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      id="form_email"
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      required="required"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea
+                      id="form_message"
+                      name="message"
+                      placeholder="Message"
+                      rows="4"
+                      required="required"
+                    ></textarea>
+                  </div>
+
+                  <input type="submit" value="Submit" class="btn btn-dark" />
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="social-icon d-flex jc-center align-center">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-google"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
+    <footer>
+      <div class="container text-center">
+        <div class="row">
+          <p>Copy Right 2025 © By Daniels All Rights Reserved</p>
+        </div>
       </div>
+    </footer>
 
-      <div class="copyright">
-        <p>Copy Right 2018 © By <span>Theme-fair</span> All Rights Reserved</p>
-      </div>
-    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/navbar.js"></script>
   </body>
 </html>
